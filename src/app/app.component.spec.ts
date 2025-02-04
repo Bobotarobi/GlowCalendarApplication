@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'GlowCalendar' title`, () => {
+  it(`should have the 'glowcalendar' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('GlowCalendar');
+    expect(app.title).toEqual('glowcalendar');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, GlowCalendar');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, glowcalendar');
   });
 });
