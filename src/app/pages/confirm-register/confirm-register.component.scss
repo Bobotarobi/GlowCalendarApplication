@@ -1,0 +1,30 @@
+
+
+.register-confirm-page{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100hv;
+  height: 100vh;
+}
+
+.register-confirm-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 10px;
+  align-content: flex-start;
+  padding: 50px;
+  height: auto;
+  width: 800px;
+  border-radius: 25px;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}

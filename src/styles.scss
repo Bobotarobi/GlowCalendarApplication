@@ -1,10 +1,13 @@
 @use '@angular/material' as mat;
+@use 'app/pages/confirm-register/confirm-register-theme.scss' as confirm-register;
 
 @include mat.core();
 
+
+
 $application-theme: mat.define-theme((
   color: (
-    theme-type: dark,
+    theme-type: light,
     primary: mat.$azure-palette,
     tertiary: mat.$blue-palette,
   ),
@@ -16,7 +19,7 @@ $application-theme: mat.define-theme((
 :root {
   @include mat.all-component-themes($application-theme);
   @include mat.all-component-typographies($application-theme);
-  // Тут далі додавати всі стилі які використовуються на сторінках
+  @include confirm-register.theme($application-theme);
 }
 
 @include mat.typography-hierarchy($application-theme);
@@ -27,6 +30,8 @@ html, body {
   height: 100%;
 }
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
